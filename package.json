@@ -9,7 +9,7 @@
     "ng": "ng",
     "ng:serve": "ng serve",
     "ng:serve:web": "npm run postinstall:web && ng serve -o",
-    "ng:build:web":"npm run postinstall:web && ng build --prod",
+    "ng:build:web":"npm run postinstall:web && ng build --prod --base-href ./",
     "start": "npm run postinstall:electron && npm-run-all -p ng:serve electron:serve",
     "build": "npm run postinstall:electron && npm run electron:serve-tsc && ng build --base-href ./",
     "build:dev": "npm run build -- -c dev",
