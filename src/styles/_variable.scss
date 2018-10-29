@@ -1,0 +1,8 @@
+@import "~open-color/open-color";
+
+$commnity-list-width: 76px;
+$channel-side-width: 250px;
+$header-height: 70px;
+$side-width: $commnity-list-width + $channel-side-width;
+$content-height: calc(100vh - #{$header-height});
+$content-width: calc(100vw - #{$side-width});

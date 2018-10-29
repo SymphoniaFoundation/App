@@ -1,0 +1,27 @@
+<div id="channels">
+  <div id="channelHeader" fxLayoutAlign="space-between center">
+    <h4>
+      <!-- <fa-icon [icon]="faComments"></fa-icon> -->
+      Channel
+    </h4>
+    <button>
+      <fa-icon [icon]="faPlus"></fa-icon>
+    </button>
+  </div>
+
+  <div class="channel" [routerLink]="['channel', 'announcement']" routerLinkActive="active">
+    <h4>#announcement</h4>
+  </div>
+  <div class="channel" [routerLink]="['channel', 'general']" routerLinkActive="active">
+    <h4>#general</h4>
+  </div>
+  <div class="channel" [routerLink]="['channel', 'design']" routerLinkActive="active">
+    <h4>#design</h4>
+  </div>
+  <div class="channel" [routerLink]="['channel', 'product']" routerLinkActive="active">
+    <h4>#product</h4>
+  </div>
+  <div class="channel" [routerLink]="['channel', 'marketing']" routerLinkActive="active">
+    <h4>#marketing</h4>
+  </div>
+</div>

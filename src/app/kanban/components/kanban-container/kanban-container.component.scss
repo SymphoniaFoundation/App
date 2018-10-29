@@ -1,0 +1,23 @@
+@import 'variable';
+
+:host {
+  display: block;
+  height: $content-height;
+  width: $content-width;
+}
+
+div#container {
+  height: 100%;
+  overflow-x: auto;
+
+  & > * {
+    flex: 0 0 auto;
+    width: 350px;
+    margin-left: 10px;
+  }
+
+  &::after {
+    content: '';
+    flex: 0 0 10px;
+  }
+}

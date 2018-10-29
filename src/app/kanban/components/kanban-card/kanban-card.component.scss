@@ -1,0 +1,10 @@
+@import 'variable';
+
+div.card {
+  border: 1px solid $oc-gray-2;
+  border-left: 3px solid $oc-violet-4;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  background-color: $oc-gray-0;
+}

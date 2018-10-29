@@ -1,0 +1,12 @@
+@import 'variable';
+
+:host {
+  display: block;
+  background-color: $oc-gray-1;
+}
+
+div {
+  width: 100%;
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+}
