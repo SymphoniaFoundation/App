@@ -5,6 +5,9 @@
 /tmp
 /out-tsc
 
+/main.js
+/main.js.map
+
 # dependencies
 /node_modules
 
