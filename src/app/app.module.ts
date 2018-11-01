@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UiModule } from './ui/ui.module';
+import { ElectronService } from './providers/electron.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { UiModule } from './ui/ui.module';
     AppRoutingModule,
     UiModule
   ],
-  providers: [],
+  providers: [ElectronService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

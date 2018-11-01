@@ -1,6 +1,6 @@
 <div id="CommunityList">
 
-  <div id="MacButtonSet"></div>
+  <div id="MacButtonSet" *ngIf="electronService.isElectron()"></div>
 
   <ul id="CommunityList">
     <!-- <li fxLayoutAlign="center center" [routerLink]="['/setup']" routerLinkActive="router-link-active">

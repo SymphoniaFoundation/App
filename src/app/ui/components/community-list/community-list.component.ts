@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ElectronService } from 'src/app/providers/electron.service';
 
 @Component({
   selector: 'sym-community-list',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommunityListComponent implements OnInit {
 
-  constructor() { }
+  constructor(public electronService: ElectronService) { }
 
   ngOnInit() {
   }
