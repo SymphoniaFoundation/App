@@ -1,10 +1,7 @@
 <div id="container" fxLayout="row">
-  <sym-kanban-board></sym-kanban-board>
-  <sym-kanban-board></sym-kanban-board>
-  <sym-kanban-board></sym-kanban-board>
-  <sym-kanban-board></sym-kanban-board>
-  <sym-kanban-board></sym-kanban-board>
-  <sym-kanban-board></sym-kanban-board>
-  <sym-kanban-board></sym-kanban-board>
-  <sym-kanban-board></sym-kanban-board>
+  <sym-kanban-board [name]="'Backlog'" [count]="6"></sym-kanban-board>
+  <sym-kanban-board [name]="'Waiting'" [count]="11"></sym-kanban-board>
+  <sym-kanban-board [name]="'Todo'" [count]="5"></sym-kanban-board>
+  <sym-kanban-board [name]="'Progress'" [count]="2"></sym-kanban-board>
+  <sym-kanban-board [name]="'Done'" [count]="3"></sym-kanban-board>
 </div>

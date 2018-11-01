@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -8,11 +8,17 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 })
 export class KanbanBoardComponent implements OnInit {
 
+  @Input() name;
+  @Input() count = 10;
+  items;
+
   faPlus = faPlus;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+    this.items = Array.from(Array(this.count).keys());
   }
 
 }
