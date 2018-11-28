@@ -1,16 +1,19 @@
 <div class="board">
   <header fxLayoutAlign="space-between center">
-    <h4>{{ name }}</h4>
+    <h4>
+      <span class="container">
+        {{ data.items.length }}
+      </span>
+      {{ data.title }}
+    </h4>
+
     <button>
-      <fa-icon [icon]="faPlus"></fa-icon>
+      <fa-icon [icon]="faEllipsisH"></fa-icon>
     </button>
   </header>
   <ul>
-    <li *ngFor="let item of items">
-      <sym-kanban-card>
-        <h3 title>Hello World!</h3>
-        <p content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</p>
-      </sym-kanban-card>
+    <li *ngFor="let item of data.items">
+      <sym-kanban-card [item]="item" [color]="data.color"></sym-kanban-card>
     </li>
   </ul>
 </div>

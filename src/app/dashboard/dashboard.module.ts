@@ -5,6 +5,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { LayoutComponent } from './containers/layout/layout.component';
 import { DashboardHeaderComponent } from './components/dashboard-header/dashboard-header.component';
+import { IssueStatusComponent } from './components/issue-status/issue-status.component';
+import { TokenStatusComponent } from './components/token-status/token-status.component';
 
 @NgModule({
   imports: [
@@ -12,6 +14,6 @@ import { DashboardHeaderComponent } from './components/dashboard-header/dashboar
     DashboardRoutingModule,
     FlexLayoutModule
   ],
-  declarations: [LayoutComponent, DashboardHeaderComponent]
+  declarations: [LayoutComponent, DashboardHeaderComponent, IssueStatusComponent, TokenStatusComponent]
 })
 export class DashboardModule { }

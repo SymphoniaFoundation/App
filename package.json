@@ -9,7 +9,7 @@
     "ng": "ng",
     "ng:serve": "ng serve",
     "ng:serve:web": "npm run postinstall:web && ng serve -o",
-    "ng:build:web":"npm run postinstall:web && ng build --prod --base-href ./",
+    "ng:build:web": "npm run postinstall:web && ng build --prod --base-href ./",
     "start": "npm run postinstall:electron && npm-run-all -p ng:serve electron:serve",
     "build": "npm run postinstall:electron && npm run electron:serve-tsc && ng build --base-href ./",
     "build:dev": "npm run build -- -c dev",
@@ -50,6 +50,7 @@
     "open-color": "^1.6.3",
     "rxjs": "^6.0.0",
     "wait-on": "^3.1.0",
+    "web3": "^1.0.0-beta.36",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

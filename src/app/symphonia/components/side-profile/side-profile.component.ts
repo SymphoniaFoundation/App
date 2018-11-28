@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faCog } from '@fortawesome/free-solid-svg-icons';
+import { SwarmService } from 'src/app/services/swarm.service';
 
 @Component({
   selector: 'sym-side-profile',
@@ -9,10 +10,13 @@ import { faCog } from '@fortawesome/free-solid-svg-icons';
 export class SideProfileComponent implements OnInit {
 
   faCog = faCog;
+  public account: string;
 
-  constructor() { }
+  constructor(private swarmService: SwarmService) {
+  }
 
-  ngOnInit() {
+  async ngOnInit() {
+    this.account = await this.swarmService.getAccount();
   }
 
 }

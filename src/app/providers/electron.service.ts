@@ -6,12 +6,6 @@ import { ipcRenderer, webFrame, remote } from 'electron';
 import * as childProcess from 'child_process';
 import * as fs from 'fs';
 
-declare var window: Window;
-interface Window {
-  process: any;
-  require: any;
-}
-
 @Injectable()
 export class ElectronService {
 

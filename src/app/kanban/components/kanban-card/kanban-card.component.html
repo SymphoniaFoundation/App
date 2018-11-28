@@ -1,4 +1,20 @@
-<div class="card">
-  <ng-content select=[title]></ng-content>
-  <ng-content select=[content]></ng-content>
+<div class="card" [ngClass]="color" gdAreas="head | labels | users">
+  <div class="head" gdArea="head">
+    <h3>
+      {{ item.title }}
+    </h3>
+    <span class="muted">#{{item.number}} created by @{{ item.author.name }}</span>
+  </div>
+
+  <div class="labels" gdArea="labels">
+    <span class="label" *ngFor="let label of item.labels">
+      {{label.title}}
+    </span>
+  </div>
+
+  <div class="users" gdArea="users">
+    <span class="user" *ngFor="let user of item.assigned">
+      <img [srcset]="user.profile" [alt]="user.name">
+    </span>
+  </div>
 </div>

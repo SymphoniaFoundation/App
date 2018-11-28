@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { Card } from '../kanban-container/kanban-container.component';
 
 @Component({
   selector: 'sym-kanban-card',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./kanban-card.component.scss']
 })
 export class KanbanCardComponent implements OnInit {
+
+  @Input() item: Card;
+  @Input() color: string;
 
   constructor() { }
 

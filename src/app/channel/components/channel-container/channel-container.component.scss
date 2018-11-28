@@ -2,14 +2,14 @@
 
 :host {
   display: block;
-  height: calc(100vh - 110px);
+  height: calc(100vh - 125px);
 }
 
 div#content {
   display: flex;
   flex-flow: column;
   width: 100%;
-  height: calc(100vh - 110px);
+  height: calc(100vh - 125px);
 
   div.chat-container {
     height: 100%;
